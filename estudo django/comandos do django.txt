@@ -1,0 +1,24 @@
+Apos criar a pasta onde ficará o ambiente virtual
+python -m venv ./venv ou python -m venv venv
+
+executar o ambiente virtual
+'caminho da pasta,EX: C:\Users\Yago\Desktop\aplicacao> .\venv\Scripts\activate'
+.\venv\Scripts\activate
+
+pip install django
+
+django-admin help - todos os comandos do django
+
+django-admin startproject 'nome-projeto' .
+python manage.py startapp 'nome-app'
+
+python manage.py makemigrations - prepara as migrações para o banco de dados
+python manage.py migrate - faz as alterações no banco  
+python manage.py createsuperuser - cria usuario admin 
+python manage.py runserver - roda a aplicação
+
+python manage.py shell - é apenas uma maneira que o Django oferece para facilitar esta configuração do ambiente do seu projeto no shell do Python. Quando voce abre o python shell "puro" voce tem disponível apenas os pacotes disponíveis na sua env.
+
+ctrl + c - pausa o servidor
+
+https://paulosantanna.com/2012/10/14/habilitando-a-execucao-de-scripts-powershell/
