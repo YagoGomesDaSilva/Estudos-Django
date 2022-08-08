@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form action="{% url 'processa_formulario'%}" method="POST"> {% cfrs_token %}
+<form action="{% url 'processa_formulario'%}" method="POST"> 
     <lable>Nome:</lable>
         <input type= "text" placeholder="Nome..." name="nome">
         <br>
@@ -21,32 +21,3 @@
   </form>
 </body>
 </html>
-
-<!--
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Meu Site</title>
-</head>
-<body>
-
-    <form action="{% url 'processa_formulario' %}" method="POST"> {% cfrs_token %}
-        <lable>Nome:</lable>
-        <input type= "text" placeholder="Nome..." name="nome">
-        <br>
-        <br>
-
-        <lable>Email:</lable>
-        <input type= "email" placeholder="Email..." name="email">
-        <br>
-        <br>
-
-        <imput type= "submit" value="enviar">
-    </form>
-
-</body>
-</html>
-
--->
