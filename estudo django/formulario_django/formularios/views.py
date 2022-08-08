@@ -5,6 +5,8 @@ def home(request):
     return render(request,'home.html')
 
 def processa_formulario(request):
-    return HttpResponse('teste')
+    nome = request.POST.get("nome")
+    email = request.POST.get("email")
+    return HttpResponse(f'{nome} {email}')
 
 

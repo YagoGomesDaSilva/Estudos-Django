@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form action="{% url 'processa_formulario'%}" method="POST"> 
+<form action="{% url 'processa_formulario'%}" method="POST"> {% csrf_token %}
     <lable>Nome:</lable>
         <input type= "text" placeholder="Nome..." name="nome">
         <br>
@@ -17,7 +17,8 @@
         <br>
         <br>
 
-        <imput type= "submit" value="enviar">
+        <input type="submit" value="Enviar">
+
   </form>
 </body>
 </html>
