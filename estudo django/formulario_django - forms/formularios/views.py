@@ -7,7 +7,13 @@ def home(request):
     return render(request,'home.html',{'form':form})
 
 def processa_formulario(request):
-    
-    return HttpResponse('teste')
+    form = formularioCadastro(request.POST)
+    if form.is_valid():
+        nome = form.data['nome']
+        email = form.data['email']
+        return HttpResponse(f"{nome} {email}")
+    else:
+        return HttpResponse("erro no sistema")
+
 
 
