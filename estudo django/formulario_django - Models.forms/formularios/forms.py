@@ -4,5 +4,5 @@ from .models import Pessoa
 class formularioCadastro(forms.ModelForm):
     class Meta:
         model = Pessoa
-        filds = ('nome','email')
+        fields = ('nome','email')
     
