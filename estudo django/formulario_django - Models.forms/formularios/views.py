@@ -9,9 +9,8 @@ def home(request):
 def processa_formulario(request):
     form = formularioCadastro(request.POST)
     if form.is_valid():
-        nome = form.data['nome']
-        email = form.data['email']
-        return HttpResponse(f"{nome} {email}")
+        form.save()
+        return HttpResponse("salvo com sucesso")
     else:
         return HttpResponse("erro no sistema")
 

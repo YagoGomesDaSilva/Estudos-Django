@@ -1,5 +1,8 @@
 from django import forms
+from .models import Pessoa
 
-class formularioCadastro(forms.Form):
-    nome = forms.CharField(max_length=50)
-    email = forms.EmailField()
+class formularioCadastro(forms.ModelForm):
+    class Meta:
+        model = Pessoa
+        filds = ('nome','email')
+    
